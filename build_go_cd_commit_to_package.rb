@@ -34,7 +34,7 @@ cd 'build_map' do
   end
 
   sh 'git add .'
-  sh "git commit -m 'Update map file - #{entry}' --author 'GoCD CI User <godev+gocd-ci-user@thoughtworks.com>'"
+  sh "git commit -m 'Update map file - #{entry}' --author 'GoCD CI User <12554687+gocd-ci-user@users.noreply.github.com>'"
   sh %Q{git push "https://#{ENV['BUILD_MAP_USER']}:#{ENV['BUILD_MAP_PASSWORD']}@github.com/gocd/build_map" master}
   puts "Map file updated"
 end
